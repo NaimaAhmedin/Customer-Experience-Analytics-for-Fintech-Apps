@@ -4,8 +4,8 @@ import re
 from datetime import datetime
 
 # ---------------- CONFIG ----------------
-RAW_DIR = "../data/raw"
-PROCESSED_DIR = "../data/processed"
+RAW_DIR = "data/raw"
+PROCESSED_DIR = "data/processed"
 # ---------------------------------------
 
 def clean_text(text):
@@ -29,12 +29,16 @@ def process_file(file_path):
     
     # Add bank column based on filename
     fname = os.path.basename(file_path).lower()
+
     if "cbe" in fname:
-        df['bank'] = "CBE"
-    elif "boa" in fname:
-        df['bank'] = "Abyssinia"
+      df["bank"] = "CBE"
+    elif "abyssinia" in fname or "boa" in fname:
+      df["bank"] = "Abyssinia"
+    elif "dashen" in fname:
+      df["bank"] = "Dashen"
     else:
-        df['bank'] = "Dashen"
+      df["bank"] = "Unknown"
+
     # Clean text
     df['review'] = df['review'].apply(clean_text)
     

@@ -3,7 +3,7 @@ import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # ---------------- CONFIG ----------------
-PROCESSED_DIR = "../data/processed"
+PROCESSED_DIR = "data/processed"
 INPUT_FILE = f"{PROCESSED_DIR}/cleaned_reviews.csv"
 OUTPUT_FILE = f"{PROCESSED_DIR}/processed_reviews_sentiment.csv"
 # ---------------------------------------
