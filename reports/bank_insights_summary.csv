@@ -1,0 +1,4 @@
+bank,total_reviews,avg_rating,positive_reviews,negative_reviews,top_drivers,top_pain_points,sentiment_score
+Abyssinia,400,3.38,229,149,"good good(14), best good(6), best best(4)","mobile banking(12), developer options(7), worst ever(6)",0.143
+CBE,400,4.12,307,70,"good good(14), best good(7), good best(6)","new sim(3), sim card(3), mobile banking(3)",0.266
+Dashen,400,3.96,287,91,"dashen super(13), digital banking(7), mobile banking(6)","worst ever(5), worst banking(4), mobile banking(4)",0.307
