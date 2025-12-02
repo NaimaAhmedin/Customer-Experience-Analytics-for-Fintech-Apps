@@ -5,10 +5,10 @@ import seaborn as sns
 import os
 
 # Load processed data
-df = pd.read_csv("../data/processed/processed_reviews_sentiment.csv")
+df = pd.read_csv("data/processed/processed_reviews_sentiment.csv")
 
 # Ensure output directory exists
-os.makedirs("../reports/figures", exist_ok=True)
+os.makedirs("reports/figures", exist_ok=True)
 
 # -----------------------
 # 1. Sentiment Distribution per Bank
